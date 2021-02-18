@@ -1,0 +1,36 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.container-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.head-title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tip {
+  font-size: 12px;
+  color: #333;
+}
+
+.a-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  color: black;
+  padding: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, white, #ccc);
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    background: linear-gradient(to top, white, #ccc);
+  }
+}

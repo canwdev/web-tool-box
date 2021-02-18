@@ -1,8 +1,9 @@
 <template>
-  <div class="counter">
+  <div class="counter container">
+    <div class="head-title">计数器</div>
     <div class="counter-number">{{ count }}</div>
     <p class="actions">
-      <button @click="reset">Reset</button>
+      <button @click="reset">重置</button>
       <input type="number" placeholder="step" v-model="step">
       <button autofocus @click="add">+</button>
       <button autofocus @click="minus">-</button>
@@ -55,8 +56,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .counter {
-  max-width: 500px;
-  margin: 0 auto;
   font-family: monospace;
 
   .counter-number {
@@ -75,6 +74,8 @@ export default {
       display: inline-block;
       width: 23%;
       font-size: 30px;
+      height: 50px !important;
+      box-sizing: border-box;
 
       &:focus {
         outline: 3px solid red;

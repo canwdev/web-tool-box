@@ -1,21 +1,27 @@
 <template>
   <div id="app">
-    <Counter />
+    <div class="global-link">
+      <router-link class="a-btn" to="/">主页</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Counter from './components/Counter.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Counter
-  }
+  name: 'App'
 }
 </script>
 
-<style>
-#app {
+<style lang="scss" scoped>
+.global-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  a {
+    text-decoration: none;
+  }
 }
 </style>
