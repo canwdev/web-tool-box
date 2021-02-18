@@ -1,6 +1,6 @@
 <template>
   <div class="container-1200">
-    <div class="head-title">设备尺寸预览工具</div>
+    <div class="head-title">设备尺寸预览</div>
     <p class="object-list">
       <label for="selectModel">
         预设:

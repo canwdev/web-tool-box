@@ -3,8 +3,12 @@
     <div class="head-title">工具箱</div>
     <div class="fn-list">
       <router-link class="a-btn" to="/counter">计数器</router-link>
-      <router-link class="a-btn" to="/object-size">尺寸</router-link>
+      <router-link class="a-btn" to="/object-size">设备尺寸预览</router-link>
       <router-link class="a-btn" to="/calculator">简易计算器</router-link>
+      <router-link class="a-btn coming-soon" to="/">数字时钟</router-link>
+      <router-link class="a-btn coming-soon" to="/">模拟时钟</router-link>
+      <router-link class="a-btn coming-soon" to="/metronome">节拍器</router-link>
+      <router-link class="a-btn coming-soon" to="/">设备信息</router-link>
     </div>
   </div>
 </template>
@@ -24,6 +28,10 @@ export default {
   grid-row-gap: 10px;
   a {
     height: 100px;
+    &.coming-soon {
+      cursor: not-allowed;
+      opacity: .5;
+    }
   }
 }
 </style>
