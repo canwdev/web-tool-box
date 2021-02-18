@@ -18,7 +18,7 @@ export default {
 .global-link {
   position: fixed;
   top: 10px;
-  left: 10px;
+  right: 10px;
   z-index: 99;
   a {
     text-decoration: none;

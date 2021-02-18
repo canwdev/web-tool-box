@@ -19,6 +19,11 @@ const routes = [
     path: '/object-size',
     name: 'ObjectSize',
     component: () => import('../views/ObjectSize.vue')
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: () => import('../views/Calculator.vue')
   }
 ]
 

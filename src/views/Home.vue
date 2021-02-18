@@ -4,6 +4,7 @@
     <div class="fn-list">
       <router-link class="a-btn" to="/counter">计数器</router-link>
       <router-link class="a-btn" to="/object-size">尺寸</router-link>
+      <router-link class="a-btn" to="/calculator">简易计算器</router-link>
     </div>
   </div>
 </template>
